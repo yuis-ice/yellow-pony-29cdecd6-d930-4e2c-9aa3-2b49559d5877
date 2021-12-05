@@ -1,0 +1,32 @@
+
+# change the filename of this file from config.deafult.yml to config.yml 
+
+# discord settings 
+discord:
+  # your discord bot token 
+  token: 
+  
+# app settings
+app: 
+  deadline: 
+      # specify either absolute or relative 
+      # e.g. 19:20
+      absolute: 
+      # e.g. HH:mm .. hour:minutes
+      absolute_format: HH:mm
+      # e.g. 00:20:00 .. run the discord app for 20 minutes then exits the monitoring
+      relative: 00:20:00
+  export: 
+      # export format [newline,json] 
+      format: newline
+      # file path to export the data 
+      path: ./users.txt
+      # [dev] change has no effect
+      # specify the data type of a user you need [username_id, user_id]
+      # user_id e.g. 123631401064595456
+      # username_id e.g. Isla#1234
+      data: username_id
+
+# debug settings 
+debug:
+  log: true 
