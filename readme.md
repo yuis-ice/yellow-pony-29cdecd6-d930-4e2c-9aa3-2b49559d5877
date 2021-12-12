@@ -103,7 +103,7 @@ C:/ProgramData/nvm/v16.6.0/node64.exe .\app_discord.js
 node .\app_discord.js 
 ```
 
-discordアプリ
+google sheetアプリ
 
 ```
 C:/ProgramData/nvm/v16.6.0/node64.exe .\app_googlesheet.js 
@@ -113,3 +113,8 @@ C:/ProgramData/nvm/v16.6.0/node64.exe .\app_googlesheet.js
 node .\app_googlesheet.js 
 ```
 
+なお、想定スプレッドシートの例: 
+
+![](https://yuis.xsrv.jp/images/ss/ShareX_ScreenShot_4a997f46-8ebd-4d39-84ab-751be510d8c5.png)
+
+https://docs.google.com/spreadsheets/d/1mpKOKTU2MaBW_hoV_GXVDmD0XfW0PWRixfQOgQoT3Qo/edit#gid=1689859390
