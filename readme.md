@@ -6,13 +6,13 @@
 
 ## 必要環境
 
-git 
-node.js v16.6 
+- git 
+- node.js v16.6 
 
 ## 想定環境
 
-windows 10
-powershell (admin)
+- windows 10
+- powershell (admin)
 
 ## 環境構築
 
