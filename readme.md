@@ -117,4 +117,4 @@ node .\app_googlesheet.js
 
 ![](https://yuis.xsrv.jp/images/ss/ShareX_ScreenShot_4a997f46-8ebd-4d39-84ab-751be510d8c5.png)
 
-https://docs.google.com/spreadsheets/d/1mpKOKTU2MaBW_hoV_GXVDmD0XfW0PWRixfQOgQoT3Qo/edit#gid=1689859390
+<!-- https://docs.google.com/spreadsheets/d/1mpKOKTU2MaBW_hoV_GXVDmD0XfW0PWRixfQOgQoT3Qo/edit#gid=1689859390 -->
