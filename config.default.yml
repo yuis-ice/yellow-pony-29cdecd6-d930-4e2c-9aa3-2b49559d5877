@@ -5,9 +5,33 @@
 discord:
   # your discord bot token 
   token: 
+
+googlesheet: 
   
+  # google sheet api client secret json file path 
+  # e.g. ./client_secret_...apps.googleusercontent.com.json
+  secret: 
+  
+  # sheet id 
+  # e.g. 1mpKOKTU2MaBW_hoV_GXVDmD0XfW0PWRixfQOgQoT3Qo
+  spreadsheetId: 
+
+  # name of the join header 
+  join_col_name: join?
+  # name of the username_id header
+  usernameId_col_name: username_id
+
+  join_symbol: ✅
+
+  # format: [sheet_name]![range_of_the_table]
+  # e.g. 卓決め（8卓） !A2:F10
+  range: 卓決め（8卓） !A2:F10
+
 # app settings
 app: 
+  # regex match text for the messages
+  match_text: 参加希望|ノシ
+
   deadline: 
       # specify either absolute or relative 
       # e.g. 19:20
@@ -16,6 +40,7 @@ app:
       absolute_format: HH:mm
       # e.g. 00:20:00 .. run the discord app for 20 minutes then exits the monitoring
       relative: 00:20:00
+
   export: 
       # export format [newline,json] 
       format: newline

@@ -32,8 +32,11 @@ client.on("message", (message) => {
     console.log(moment().format(), `message: ${obj.content}`);
     
     if (message.author.bot == false && message.author.system == false )
-    if (message.content.match(/参加希望|ノシ/) )
+    // if (message.content.match(/参加希望|ノシ/) )
+    // if (message.content.match(config.app.match_text) )
+    if (message.content.match(new RegExp(config.app.match_text)) )
     // if (message.channelId.match(/535633294646050827|.../) ) // e.g.
+    if (!users.map(a => a.user_id).includes(obj.user_id))
     {
         users = users.concat(obj);
         console.log(moment().format(), `a user has been added: ${obj.username_id}`);
@@ -59,6 +62,11 @@ setTimeout(
 
         fs.writeFileSync(config.app.export.path, data);
         console.log(moment().format(), `exported.`);
+
+        // for the google sheets app 
+        data = JSON.stringify(users.map(a => a.username_id));
+        fs.writeFileSync("./data/users.json", data);
+        // console.log(moment().format(), `exported.`);
 
         // todo 
         add_to_googlesheet();
